@@ -43,8 +43,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           {/* Download Resume */}
           <li>
             <a
-              href="ShubhamCV.pdf"
-              download="ShubhamCV.pdf"
+              href="ShubhamCV1.pdf"
+              download="ShubhamCV1.pdf"
               className={`flex items-center gap-1 px-3 py-1 rounded-lg transition-colors ${
                 darkMode
                   ? "bg-amber-500 hover:bg-amber-600 text-gray-900"
@@ -136,8 +136,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             {/* Download Resume (Mobile) */}
             <li>
               <a
-                href="ShubzResume.pdf"
-                download="ShubzResume.pdf"
+                href="ShubhamCV.pdf"
+                download="ShubhamCV.pdf"
                 className={`flex items-center gap-2 px-4 py-2 rounded transition-colors ${
                   darkMode
                     ? "bg-amber-500 hover:bg-amber-600 text-gray-900"
