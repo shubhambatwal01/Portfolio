@@ -31,7 +31,7 @@ const Footer = ({ darkMode }) => {
           </a>
         </div>
         <p className={`mb-1.5 ${darkMode ? "text-gray-300" : "text-gray-600"}`}>
-          &copy; 2025 <span className="text-amber-500 font-semibold">SHUBHAM BATWAL</span>
+          &copy;2026 <span className="text-amber-500 font-semibold">SHUBHAM BATWAL</span>
         </p>
       </div>
     </footer>

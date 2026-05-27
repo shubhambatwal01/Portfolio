@@ -43,8 +43,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           {/* Download Resume */}
           <li>
             <a
-              href="ShubhamCV1.pdf"
-              download="ShubhamCV1.pdf"
+              href="ShubhamCV.pdf"
+              download="ShubhamCV.pdf"
               className={`flex items-center gap-1 px-3 py-1 rounded-lg transition-colors ${
                 darkMode
                   ? "bg-amber-500 hover:bg-amber-600 text-gray-900"
