@@ -4,8 +4,9 @@ const projects = [
     description:
       "Developed a full-stack accommodation booking platform with user, host, and admin roles, featuring property listings, secure authentication, booking management, and integrated payment gateway for seamless transactions.",
     image:
-      "https://i.8upload.com/image/7c3c66a62bce3fd7/screenshot-2026-05-27-221026.png", // Add your project images
-    github: "https://github.com/shubhambatwal01/SmartStay", // Add your project links
+      "https://i.8upload.com/image/7c3c66a62bce3fd7/screenshot-2026-05-27-221026.png",
+    github: "https://github.com/shubhambatwal01/SmartStay",
+    link: "https://smartstay-prm1.onrender.com/",
   },
   {
     title: "Calculator App",
@@ -91,6 +92,14 @@ const Projects = ({ darkMode }) => {
                     className="text-blue-500 hover:border-2 hover:border-blue-500 px-3 py-1 rounded-md transition-colors duration-300"
                   >
                     GitHub Link
+                  </a>
+                )}
+                {proj.link && (
+                  <a
+                    href={proj.link}
+                    className="text-green-500 hover:border-2 hover:border-green-500 px-3 py-1 rounded-md transition-colors duration-300"
+                  >
+                    Live Demo
                   </a>
                 )}
               </div>
