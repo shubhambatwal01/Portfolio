@@ -121,7 +121,7 @@ https://shubzportfolio.vercel.app
 ## 📸 Screenshots
 
 ### Home Page
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7253f2e6-9a81-437d-80c6-4cb8a579495f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/477abbbc-376d-41f1-af93-21126c14db04" />
 
 ---
 
