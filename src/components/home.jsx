@@ -49,9 +49,9 @@ const Home = ({ darkMode }) => {
         </div>
 
         {/* Image */}
-        <div className="flex-shrink-0">
+        <div className="shrink-0">
           <img
-            src="https://8upload.com/image/e620c13d8c1b0e0d/ShubzPhoto.jpg"
+            src="https://i.8upload.com/image/65efb34ea7116762/shubzphoto.png"
             alt="Shubham Batwal"
             loading="lazy"
             className={`w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-lg transition-transform transform hover:scale-105 ${
