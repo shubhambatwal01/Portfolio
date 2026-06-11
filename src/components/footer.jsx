@@ -14,7 +14,7 @@ const Footer = ({ darkMode }) => {
               className="w-7 h-7 hover:scale-110 transition-transform"
             />
           </a>
-          <a href="https://www.linkedin.com/in/shubhambatwal03/">
+          <a href="https://www.linkedin.com/in/shubhambatwal01/">
             <img
               src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000"
               alt="Linkedin"
@@ -22,9 +22,9 @@ const Footer = ({ darkMode }) => {
             />
           </a>
 
-          <a href="https://github.com/shubhambatwal03/">
+          <a href="https://github.com/shubhambatwal01/">
             <img
-              src="https://freepnglogo.com/images/all_img/github-invertocat-logo-f0e0.png"
+              src="https://img.icons8.com/?size=100&id=63777&format=png&color=000000"
               alt="Github"
               className="w-7 h-7 hover:scale-110 transition-transform"
             />
