@@ -1,19 +1,21 @@
 const projects = [
   {
-    title: "SmartStay - Hotel Booking Website",
+    title: "SmartStay",
     description:
-      "Developed a full-stack accommodation booking platform with user, host, and admin roles, featuring property listings, secure authentication, booking management, and integrated payment gateway for seamless transactions.",
+      "SmartStay is a full-stack web application to browse rental homes, manage favorites, enable secure authentication, and take online payments using Razorpay.",
     image:
-      "https://i.8upload.com/image/7c3c66a62bce3fd7/screenshot-2026-05-27-221026.png",
+      "https://i.8upload.com/image/f485e4c60837f1b8/screenshot-2026-07-08-165605.png",
     github: "https://github.com/shubhambatwal01/SmartStay",
-    link: "https://smartstay-prm1.onrender.com/",
+    link: "https://shubz-smart-stay.vercel.app",
   },
   {
-    title: "Calculator App",
+    title: "Task Manager",
     description:
-      "A modern, responsive calculator web app built with ReactJS and styled using Tailwind CSS. This project replicates the look and feel of a mobile calculator, featuring a clean UI, smooth button interactions, and basic arithmetic operations.",
-    image: "https://8upload.com/image/1033ab83888ca174/Calclator.jpg", // Add your project images
-    github: "https://github.com/shubhambatwal01/Calculator", // Add your project links
+      "A full-stack MERN Task Management System featuring task CRUD operations, REST APIs, MongoDB database integration, and a responsive React-based user interface.",
+    image:
+      "https://i.8upload.com/image/4cae10e7ec1dfa52/screenshot-2026-07-08-170143.png",
+    github: "https://github.com/shubhambatwal01/Task-Management-System",
+    link: "https://shubz-task-manager.vercel.app",
   },
   {
     title: "Amazaon Clone",
@@ -30,18 +32,18 @@ const projects = [
     github: "https://github.com/shubhambatwal01/Rock-Paper-Scissors-Game",
   },
   {
-    title: "To-Do List",
-    description:
-      "A simple and modern Todo application built with ReactJS. This version uses ReactJS Context and the `useReducer` hook for state management, allowing users to add and delete todo items with due dates.",
-    image: "https://8upload.com/image/96ed4a95460893ae/To-Do-List.jpg",
-    github: "https://github.com/shubhambatwal01/To-Do-List",
-  },
-  {
     title: "BMI-Calculator",
     description:
       "A simple and user-friendly Body Mass Index (BMI) Calculator built with React and Vite. This app allows users to quickly calculate their BMI based on height and weight inputs, providing instant feedback on their health status.",
     image: "https://8upload.com/image/b8e5f39b35770258/BMI-Calculator.jpg",
     github: "https://github.com/shubhambatwal01/BMI-Calculator",
+  },
+  {
+    title: "Calculator App",
+    description:
+      "A modern, responsive calculator web app built with ReactJS and styled using Tailwind CSS. This project replicates the look and feel of a mobile calculator, featuring a clean UI, smooth button interactions, and basic arithmetic operations.",
+    image: "https://8upload.com/image/1033ab83888ca174/Calclator.jpg", // Add your project images
+    github: "https://github.com/shubhambatwal01/Calculator", // Add your project links
   },
 ];
 
