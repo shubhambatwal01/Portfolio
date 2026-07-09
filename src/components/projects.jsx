@@ -51,59 +51,77 @@ const Projects = ({ darkMode }) => {
   return (
     <section
       id="projects"
-      className={`min-h-screen py-20 ${
-        darkMode ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-800"
-      } transition-colors duration-300`}
+      className={`min-h-screen py-20 transition-all duration-300 ${
+        darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+      }`}
     >
       <div className="container mx-auto px-6">
-        <h2 className="text-amber-500 text-5xl font-bold mb-1.5 text-center">
-          PROJECTS
-        </h2>
-        <h5 className="text-center mb-12">
-          Projects upon which I have worked on.
-        </h5>
+        <div className="mb-16 text-center">
+          <h2 className="text-5xl font-bold mb-4 bg-linear-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
+            PROJECTS
+          </h2>
+          <p
+            className={`text-lg ${darkMode ? "text-gray-400" : "text-gray-600"}`}
+          >
+            Projects upon which I have worked on.
+          </p>
+        </div>
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((proj, index) => (
             <div
               key={index}
-              className={`group p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 ${
-                darkMode ? "bg-gray-800 text-white" : "bg-white text-gray-800"
+              className={`group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border ${
+                darkMode
+                  ? "bg-linear-to-br from-gray-800 to-gray-900 border-gray-700 hover:border-amber-500/50"
+                  : "bg-linear-to-br from-white to-gray-50 border-gray-100 hover:border-amber-500/50"
               }`}
             >
               {proj.image && (
-                <div className="mb-4 overflow-hidden rounded-lg">
+                <div className="mb-0 overflow-hidden h-48">
                   <img
                     src={proj.image}
                     alt={proj.title}
-                    className="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
               )}
-              <h3 className="text-2xl font-semibold mb-3">{proj.title}</h3>
-              <p
-                className={`mb-4 ${
-                  darkMode ? "text-gray-300" : "text-gray-600"
-                }`}
-              >
-                {proj.description}
-              </p>
-              <div className="flex space-x-4">
-                {proj.github && (
-                  <a
-                    href={proj.github}
-                    className="text-blue-500 hover:border-2 hover:border-blue-500 px-3 py-1 rounded-md transition-colors duration-300"
-                  >
-                    GitHub Link
-                  </a>
-                )}
-                {proj.link && (
-                  <a
-                    href={proj.link}
-                    className="text-green-500 hover:border-2 hover:border-green-500 px-3 py-1 rounded-md transition-colors duration-300"
-                  >
-                    Live Demo
-                  </a>
-                )}
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 group-hover:text-amber-500 transition-colors">
+                  {proj.title}
+                </h3>
+                <p
+                  className={`mb-6 leading-relaxed ${
+                    darkMode ? "text-gray-300" : "text-gray-600"
+                  }`}
+                >
+                  {proj.description}
+                </p>
+                <div className="flex gap-4 flex-wrap">
+                  {proj.github && (
+                    <a
+                      href={proj.github}
+                      className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+                        darkMode
+                          ? "bg-blue-600/20 hover:bg-blue-600/40 text-blue-300 border border-blue-600/50"
+                          : "bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200"
+                      }`}
+                    >
+                      GitHub Link
+                    </a>
+                  )}
+                  {proj.link && (
+                    <a
+                      href={proj.link}
+                      className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+                        darkMode
+                          ? "bg-green-600/20 hover:bg-green-600/40 text-green-300 border border-green-600/50"
+                          : "bg-green-50 hover:bg-green-100 text-green-700 border border-green-200"
+                      }`}
+                    >
+                      Live Demo
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}

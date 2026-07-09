@@ -14,26 +14,34 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <nav
-      className={`fixed top-0 w-full shadow-md z-50 transition-all duration-300 ${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+      className={`fixed top-0 w-full backdrop-blur-md z-50 transition-all duration-300 border-b ${
+        darkMode
+          ? "bg-gray-900/95 text-white border-gray-800"
+          : "bg-white/95 text-gray-900 border-gray-100"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
-        <h1 className="text-3xl font-poppins-sans-serif font-semibold">
-          <a href="/">
-            Shubham&nbsp;
-            <span className="font-extrabold text-amber-500">Batwal</span>
+        <h1 className="text-2xl font-bold tracking-tight">
+          <a
+            href="/"
+            className="bg-linear-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent"
+          >
+            Shubham Batwal
           </a>
         </h1>
 
         {/* Desktop Navbar Links */}
-        <ul className="hidden md:flex space-x-6 items-center">
+        <ul className="hidden md:flex space-x-1 items-center">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="hover:text-amber-500 transition-colors"
+                className={`px-3 py-2 rounded-lg transition-all duration-300 font-medium ${
+                  darkMode
+                    ? "hover:text-amber-400 hover:bg-gray-800/50"
+                    : "hover:text-amber-600 hover:bg-gray-100"
+                }`}
               >
                 {link.label}
               </a>
@@ -45,10 +53,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <a
               href="ShubhamCV.pdf"
               download="ShubhamCV.pdf"
-              className={`flex items-center gap-1 px-3 py-1 rounded-lg transition-colors ${
+              className={`ml-4 flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
                 darkMode
-                  ? "bg-amber-500 hover:bg-amber-600 text-gray-900"
-                  : "bg-amber-500 hover:bg-amber-600 text-white"
+                  ? "bg-linear-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-gray-900 hover:shadow-lg hover:shadow-amber-600/50"
+                  : "bg-linear-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white hover:shadow-lg hover:shadow-amber-600/50"
               }`}
             >
               <Download size={16} />
@@ -57,13 +65,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           </li>
 
           {/* Dark/Light Mode Toggle */}
-          <li>
+          <li className="ml-2">
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className={`p-2 rounded-full transition-colors ${
+              className={`p-2.5 rounded-lg transition-all duration-300 ${
                 darkMode
-                  ? "bg-gray-700 hover:bg-gray-600 text-amber-500"
-                  : "bg-gray-200 hover:bg-gray-300 text-amber-500"
+                  ? "bg-gray-800 hover:bg-gray-700 text-amber-400"
+                  : "bg-gray-100 hover:bg-gray-200 text-amber-600"
               }`}
               aria-label={
                 darkMode ? "Switch to light mode" : "Switch to dark mode"
@@ -79,10 +87,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           {/* Dark/Light Mode Toggle (Mobile) */}
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className={`p-2 rounded-full transition-colors ${
+            className={`p-2.5 rounded-lg transition-all duration-300 ${
               darkMode
-                ? "bg-gray-700 hover:bg-gray-600 text-amber-500"
-                : "bg-gray-200 hover:bg-gray-300 text-amber-500"
+                ? "bg-gray-800 hover:bg-gray-700 text-amber-400"
+                : "bg-gray-100 hover:bg-gray-200 text-amber-600"
             }`}
             aria-label={
               darkMode ? "Switch to light mode" : "Switch to dark mode"
@@ -95,10 +103,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <button
             id="menu-btn"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`p-2 rounded transition-colors ${
+            className={`p-2.5 rounded-lg transition-all duration-300 ${
               darkMode
-                ? "bg-gray-700 hover:bg-gray-600 text-amber-500"
-                : "bg-gray-200 hover:bg-gray-300 text-amber-500"
+                ? "bg-gray-800 hover:bg-gray-700 text-amber-400"
+                : "bg-gray-100 hover:bg-gray-200 text-amber-600"
             }`}
             aria-label="Toggle menu"
           >
@@ -110,10 +118,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div
-          className={`md:hidden border-t ${
+          className={`md:hidden border-t transition-all duration-300 ${
             darkMode
-              ? "bg-gray-800 border-gray-700"
-              : "bg-gray-50 border-gray-200"
+              ? "bg-gray-800/50 border-gray-700"
+              : "bg-gray-50/50 border-gray-200"
           }`}
         >
           <ul className="flex flex-col px-6 py-4 space-y-2">
@@ -121,10 +129,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className={`block px-4 py-2 rounded transition-colors hover:text-amber-500 hover:bg-amber-100 ${
+                  className={`block px-4 py-2 rounded-lg transition-all duration-300 font-medium ${
                     darkMode
-                      ? "text-white hover:bg-gray-700"
-                      : "text-gray-900 hover:bg-gray-100"
+                      ? "text-gray-100 hover:text-amber-400 hover:bg-gray-700"
+                      : "text-gray-900 hover:text-amber-600 hover:bg-gray-100"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -134,14 +142,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             ))}
 
             {/* Download Resume (Mobile) */}
-            <li>
+            <li className="pt-2">
               <a
                 href="ShubhamCV.pdf"
                 download="ShubhamCV.pdf"
-                className={`flex items-center gap-2 px-4 py-2 rounded transition-colors ${
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
                   darkMode
-                    ? "bg-amber-500 hover:bg-amber-600 text-gray-900"
-                    : "bg-amber-500 hover:bg-amber-600 text-white"
+                    ? "bg-linear-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-gray-900"
+                    : "bg-linear-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >

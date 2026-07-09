@@ -99,20 +99,22 @@ const Skills = ({ darkMode }) => {
   return (
     <section
       id="skills"
-      className={`min-h-screen py-20 ${
-        darkMode ? "bg-gray-900 text-gray-100" : "bg-white text-gray-900"
-      } transition-colors duration-300`}
+      className={`min-h-screen py-20 transition-all duration-300 ${
+        darkMode ? "bg-gray-800 text-gray-100" : "bg-gray-50 text-gray-900"
+      }`}
       aria-labelledby="skills-heading"
     >
-      <div className="max-w-6xl mx-auto ">
-        <header className="mb-8">
+      <div className="max-w-6xl mx-auto px-6">
+        <header className="mb-16 text-center">
           <h2
             id="skills-heading"
-            className="text-amber-500 text-5xl font-bold mb-1.5 text-center"
+            className="text-5xl font-bold mb-4 bg-linear-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent"
           >
             EXPERTISE
           </h2>
-          <p className="text-center mb-12">
+          <p
+            className={`text-lg ${darkMode ? "text-gray-300" : "text-gray-600"}`}
+          >
             I am proficient in performing tasks related to all of the listed
             skills below.
           </p>
@@ -122,11 +124,11 @@ const Skills = ({ darkMode }) => {
           {skills.map((s) => (
             <article
               key={s.id}
-              className={`flex flex-col justify-between p-4 rounded-lg border ${
+              className={`group p-6 rounded-xl border transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
                 darkMode
-                  ? "border-gray-800 bg-gray-850"
-                  : "border-gray-200 bg-white"
-              } shadow-sm hover:shadow-md transition`}
+                  ? "border-gray-700 bg-linear-to-br from-gray-900 to-gray-800 hover:border-amber-500/50"
+                  : "border-gray-200 bg-linear-to-br from-white to-gray-50 hover:border-amber-500/50"
+              }`}
               aria-label={`${s.name} skill card`}
             >
               <div className="flex items-center gap-4">
@@ -134,13 +136,17 @@ const Skills = ({ darkMode }) => {
                   href={s.docs}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-shrink-0 inline-flex items-center justify-center w-12 h-12 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 transition"
+                  className={`shrink-0 inline-flex items-center justify-center w-14 h-14 rounded-lg transition-all duration-300 group-hover:scale-110 ${
+                    darkMode
+                      ? "bg-linear-to-br from-amber-600/20 to-amber-500/10 hover:from-amber-600/40 hover:to-amber-500/20"
+                      : "bg-linear-to-br from-amber-400/20 to-amber-300/10 hover:from-amber-400/40 hover:to-amber-300/20"
+                  }`}
                   title={`Open ${s.name} docs`}
                 >
                   <img
                     src={s.iconUrl}
                     alt={`${s.name} logo`}
-                    className="w-7 h-7 object-contain"
+                    className="w-8 h-8 object-contain"
                     loading="lazy"
                   />
                 </a>
@@ -150,53 +156,14 @@ const Skills = ({ darkMode }) => {
                     href={s.docs}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-medium hover:text-amber-500 transition"
+                    className={`font-semibold transition-colors group-hover:text-amber-500 ${
+                      darkMode ? "text-gray-100" : "text-gray-900"
+                    }`}
                   >
                     {s.name}
                   </a>
-                  {/* <p
-                    className={`text-xs mt-0.5 ${
-                      darkMode ? "text-gray-300" : "text-gray-600"
-                    }`}
-                  >
-                    Proficiency
-                  </p> */}
                 </div>
-
-                {/* <div className="ml-auto text-sm font-semibold">{s.level}%</div> */}
               </div>
-
-              {/* <div className="mt-4" aria-hidden="true">
-                <div
-                  className={`w-full h-2 rounded-full overflow-hidden ${
-                    darkMode ? "bg-gray-800" : "bg-gray-200"
-                  }`}
-                >
-                  <div
-                    className="h-full rounded-full"
-                    style={{
-                      width: `${s.level}%`,
-                      background: "linear-gradient(90deg,#f59e0b,#06b6d4)",
-                    }}
-                  />
-                </div>
-                <div className="mt-2 flex justify-between text-xs">
-                  <span
-                    className={`text-xs ${
-                      darkMode ? "text-gray-400" : "text-gray-500"
-                    }`}
-                  >
-                    Novice
-                  </span>
-                  <span
-                    className={`text-xs ${
-                      darkMode ? "text-gray-400" : "text-gray-500"
-                    }`}
-                  >
-                    Expert
-                  </span>
-                </div>
-              </div> */}
             </article>
           ))}
         </div>
