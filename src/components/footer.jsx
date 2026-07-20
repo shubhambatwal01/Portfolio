@@ -7,60 +7,19 @@ const Footer = ({ darkMode }) => {
           : "bg-white text-gray-900 border-gray-100"
       }`}
     >
-      <div className="container mx-auto px-6 text-center flex flex-col items-center gap-6">
-        {/* <div className="flex flex-row gap-4 justify-center">
-          <a 
-            href="mailto:shubhambatwal14@gmail.com"
-            className={`p-3 rounded-lg transition-all duration-300 group ${
-              darkMode
-                ? "hover:bg-linear-to-r hover:from-amber-500 hover:to-amber-600 bg-gray-800"
-                : "hover:bg-linear-to-r hover:from-amber-500 hover:to-amber-600 bg-gray-100"
-            }`}
-            title="Email"
-          >
-            <img
-              src="https://img.icons8.com/?size=100&id=P7UIlhbpWzZm&format=png&color=000000"
-              alt="Gmail"
-              className="w-6 h-6 transition-transform group-hover:scale-110"
-            />
-          </a>
-          <a 
-            href="https://www.linkedin.com/in/shubhambatwal01/"
-            className={`p-3 rounded-lg transition-all duration-300 group ${
-              darkMode
-                ? "hover:bg-linear-to-r hover:from-amber-500 hover:to-amber-600 bg-gray-800"
-                : "hover:bg-linear-to-r hover:from-amber-500 hover:to-amber-600 bg-gray-100"
-            }`}
-            title="LinkedIn"
-          >
-            <img
-              src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000"
-              alt="Linkedin"
-              className="w-6 h-6 transition-transform group-hover:scale-110"
-            />
-          </a>
-          <a 
-            href="https://github.com/shubhambatwal01/"
-            className={`p-3 rounded-lg transition-all duration-300 group ${
-              darkMode
-                ? "hover:bg-linear-to-r hover:from-amber-500 hover:to-amber-600 bg-gray-800"
-                : "hover:bg-linear-to-r hover:from-amber-500 hover:to-amber-600 bg-gray-100"
-            }`}
-            title="GitHub"
-          >
-            <img
-              src="https://img.icons8.com/?size=100&id=63777&format=png&color=000000"
-              alt="Github"
-              className="w-6 h-6 transition-transform group-hover:scale-110"
-            />
-          </a>
-        </div> */}
-        <p className={`${darkMode ? "text-gray-400" : "text-gray-600"}`}>
-          &copy; 2026{" "}
-          <span className="bg-linear-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent font-bold">
-            SHUBHAM BATWAL
-          </span>
-        </p>
+      <div className="mx-auto max-w-4xl px-6 py-3">
+        <div className="container mx-auto px-6 text-center flex flex-col items-center gap-6 justify-between  text-sm text-slate-400 md:flex-row">
+          <p className={`${darkMode ? "text-gray-400" : "text-gray-600"}`}>
+            © {new Date().getFullYear()} SmartStay. All Rights Reserved.
+          </p>
+          <p>
+            Designed & Developed by
+            <span className="bg-linear-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent font-bold">
+              {" "}
+              Shubham Batwal
+            </span>
+          </p>
+        </div>
       </div>
     </footer>
   );
