@@ -10,7 +10,7 @@ const Footer = ({ darkMode }) => {
       <div className="mx-auto max-w-4xl px-6 py-3">
         <div className="container mx-auto px-6 text-center flex flex-col items-center gap-6 justify-between  text-sm text-slate-400 md:flex-row">
           <p className={`${darkMode ? "text-gray-400" : "text-gray-600"}`}>
-            © {new Date().getFullYear()} SmartStay. All Rights Reserved.
+            © {new Date().getFullYear()} All Rights Reserved.
           </p>
           <p>
             Designed & Developed by
