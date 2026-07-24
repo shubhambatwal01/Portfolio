@@ -13,11 +13,13 @@ const Footer = ({ darkMode }) => {
             © {new Date().getFullYear()} All Rights Reserved.
           </p>
           <p>
-            Designed & Developed by
-            <span className="bg-linear-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent font-bold">
-              {" "}
-              Shubham Batwal
-            </span>
+            Designed & Developed by 👉🏻
+            <a
+              href="https://shubz-portfolio.vercel.app/"
+              className="bg-linear-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent font-bold"
+            >
+              ゛Shubham Batwal ˎˊ˗
+            </a>
           </p>
         </div>
       </div>
