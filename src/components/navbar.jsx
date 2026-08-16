@@ -16,17 +16,15 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     <nav
       className={`fixed top-0 w-full backdrop-blur-md z-50 transition-all duration-300 border-b ${
         darkMode
-          ? "bg-gray-900/95 text-white border-gray-800"
-          : "bg-white/95 text-gray-900 border-gray-100"
+          ? "text-white border-gray-800"
+          : "text-gray-900 border-gray-100"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
-        {/* Logo */}
-        <h1 className="text-2xl font-bold tracking-tight">
+        <h1 className="text-2xl font-bold tracking-tight font-poppins">
           <a href="/">Shubham Batwal</a>
         </h1>
 
-        {/* Desktop Navbar Links */}
         <ul className="hidden md:flex space-x-1 items-center">
           {navLinks.map((link) => (
             <li key={link.href}>
@@ -43,7 +41,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </li>
           ))}
 
-          {/* Download Resume */}
           <li>
             <a
               href="ShubhamCV.pdf"
@@ -77,7 +74,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           </li>
         </ul>
 
-        {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center gap-3">
           {/* Dark/Light Mode Toggle (Mobile) */}
           <button
@@ -94,7 +90,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
 
-          {/* Menu Button */}
           <button
             id="menu-btn"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -110,7 +105,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div
           className={`md:hidden border-t transition-all duration-300 ${
@@ -136,7 +130,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               </li>
             ))}
 
-            {/* Download Resume (Mobile) */}
             <li className="pt-2">
               <a
                 href="ShubhamCV.pdf"
