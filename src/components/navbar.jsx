@@ -14,7 +14,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <nav
-      className={`fixed top-0 w-full backdrop-blur-md z-50 transition-all duration-300 border-b ${
+      className={`fixed top-0 w-full backdrop-blur-md z-50 transition-all duration-300 border-b font-poppins ${
         darkMode
           ? "text-white border-gray-800"
           : "text-gray-900 border-gray-100"
