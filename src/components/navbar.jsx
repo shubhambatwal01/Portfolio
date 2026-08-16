@@ -23,12 +23,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
         <h1 className="text-2xl font-bold tracking-tight">
-          <a
-            href="/"
-            className="bg-linear-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent"
-          >
-            Shubham Batwal
-          </a>
+          <a href="/">Shubham Batwal</a>
         </h1>
 
         {/* Desktop Navbar Links */}
@@ -55,8 +50,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               download="ShubhamCV.pdf"
               className={`ml-4 flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
                 darkMode
-                  ? "bg-linear-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-gray-900 hover:shadow-lg hover:shadow-amber-600/50"
-                  : "bg-linear-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white hover:shadow-lg hover:shadow-amber-600/50"
+                  ? "bg-linear-to-r bg-white hover:black text-black hover:shadow-lg hover:shadow-gray-500"
+                  : "bg-linear-to-r bg-black hover:black text-white hover:shadow-lg hover:shadow-gray-800"
               }`}
             >
               <Download size={16} />
@@ -70,8 +65,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               onClick={() => setDarkMode(!darkMode)}
               className={`p-2.5 rounded-lg transition-all duration-300 ${
                 darkMode
-                  ? "bg-gray-800 hover:bg-gray-700 text-amber-400"
-                  : "bg-gray-100 hover:bg-gray-200 text-amber-600"
+                  ? "bg-gray-800 hover:bg-gray-700 text-white"
+                  : "bg-gray-200 hover:bg-gray-300 text-black"
               }`}
               aria-label={
                 darkMode ? "Switch to light mode" : "Switch to dark mode"
@@ -89,14 +84,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             onClick={() => setDarkMode(!darkMode)}
             className={`p-2.5 rounded-lg transition-all duration-300 ${
               darkMode
-                ? "bg-gray-800 hover:bg-gray-700 text-amber-400"
-                : "bg-gray-100 hover:bg-gray-200 text-amber-600"
+                ? "bg-gray-800 hover:bg-gray-700 text-white"
+                : "bg-gray-100 hover:bg-gray-200 text-black"
             }`}
             aria-label={
               darkMode ? "Switch to light mode" : "Switch to dark mode"
             }
           >
-            {darkMode ? <Sun size={18} /> : <Moon size={18} />}
+            {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
 
           {/* Menu Button */}
@@ -105,8 +100,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className={`p-2.5 rounded-lg transition-all duration-300 ${
               darkMode
-                ? "bg-gray-800 hover:bg-gray-700 text-amber-400"
-                : "bg-gray-100 hover:bg-gray-200 text-amber-600"
+                ? "bg-gray-800 hover:bg-gray-700 text-white"
+                : "bg-gray-100 hover:bg-gray-200 text-black"
             }`}
             aria-label="Toggle menu"
           >
@@ -148,8 +143,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 download="ShubhamCV.pdf"
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
                   darkMode
-                    ? "bg-linear-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-gray-900"
-                    : "bg-linear-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white"
+                    ? "bg-linear-to-r bg-white hover:black text-black hover:shadow-lg hover:shadow-gray-500"
+                    : "bg-linear-to-r bg-black hover:black text-white hover:shadow-lg hover:shadow-gray-800"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
