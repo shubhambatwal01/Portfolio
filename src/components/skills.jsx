@@ -1,105 +1,149 @@
+import { Code2, Globe, Server, Database, Wrench, Sparkles } from "lucide-react";
+import {
+  SiC,
+  SiJavascript,
+  SiPython,
+  SiHtml5,
+  SiCss,
+  SiTailwindcss,
+  SiReact,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiGit,
+  SiGithub,
+} from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+import { BrainCircuit } from "lucide-react";
+
 const Skills = ({ darkMode }) => {
-  const skills = [
+  const categories = [
     {
-      id: 1,
-      name: "C Language",
-      docs: "https://en.wikipedia.org/wiki/C_(programming_language)",
-      iconUrl:
-        "https://img.icons8.com/?size=100&id=0tuwKqWwti2E&format=png&color=000000",
+      title: "Programming Languages",
+      icon: Code2,
+      items: [
+        {
+          name: "C Language",
+          Icon: SiC,
+          color: "#659AD2",
+          docs: "https://en.wikipedia.org/wiki/C_(programming_language)",
+        },
+        {
+          name: "JavaScript",
+          Icon: SiJavascript,
+          color: "#F7DF1E",
+          docs: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        },
+        {
+          name: "Python",
+          Icon: SiPython,
+          color: "#3776AB",
+          docs: "https://www.python.org/",
+        },
+      ],
     },
     {
-      id: 2,
-      name: "HTML5",
-      docs: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
-      iconUrl:
-        "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+      title: "Frontend Technologies",
+      icon: Globe,
+      items: [
+        {
+          name: "HTML5",
+          Icon: SiHtml5,
+          color: "#E34F26",
+          docs: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
+        },
+        {
+          name: "CSS3",
+          Icon: SiCss,
+          color: "#1572B6",
+          docs: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        },
+        {
+          name: "Tailwind CSS",
+          Icon: SiTailwindcss,
+          color: "#38BDF8",
+          docs: "https://tailwindcss.com/",
+        },
+        {
+          name: "React.js",
+          Icon: SiReact,
+          color: "#61DAFB",
+          docs: "https://reactjs.org/",
+        },
+      ],
     },
     {
-      id: 3,
-      name: "CSS3 / Tailwind",
-      docs: "https://tailwindcss.com/",
-      iconUrl:
-        "https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000",
+      title: "Backend Technologies",
+      icon: Server,
+      items: [
+        {
+          name: "Node.js",
+          Icon: SiNodedotjs,
+          color: "#5FA04E",
+          docs: "https://nodejs.org/",
+        },
+        {
+          name: "Express.js",
+          Icon: SiExpress,
+          color: darkMode ? "#FFFFFF" : "#000000",
+          docs: "https://expressjs.com/",
+        },
+        {
+          name: "REST APIs",
+          Icon: TbApi,
+          color: "#F59E0B",
+          docs: "https://en.wikipedia.org/wiki/Overview_of_RESTful_API_Description_Languages",
+        },
+      ],
     },
     {
-      id: 4,
-      name: "JavaScript",
-      docs: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      iconUrl:
-        "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+      title: "Databases",
+      icon: Database,
+      items: [
+        {
+          name: "MongoDB",
+          Icon: SiMongodb,
+          color: "#47A248",
+          docs: "https://www.mongodb.com/",
+        },
+      ],
     },
     {
-      id: 5,
-      name: "React.js",
-      docs: "https://reactjs.org/",
-      iconUrl:
-        "https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000",
-    },
-
-    {
-      id: 6,
-      name: "Node.js",
-      docs: "https://nodejs.org/",
-      iconUrl:
-        "https://img.icons8.com/?size=100&id=54087&format=png&color=000000",
-    },
-    {
-      id: 7,
-      name: "Express.js",
-      docs: "https://expressjs.com/",
-      iconUrl:
-        "https://img.icons8.com/?size=100&id=WNoJgbzDr3i2&format=png&color=000000",
+      title: "Tools & Platforms",
+      icon: Wrench,
+      items: [
+        {
+          name: "Git",
+          Icon: SiGit,
+          color: "#F05032",
+          docs: "https://git-scm.com/",
+        },
+        {
+          name: "GitHub",
+          Icon: SiGithub,
+          color: darkMode ? "#FFFFFF" : "#181717",
+          docs: "https://docs.github.com/en",
+        },
+      ],
     },
     {
-      id: 8,
-      name: "REST APIs",
-      docs: "https://en.wikipedia.org/wiki/Overview_of_RESTful_API_Description_Languages",
-      iconUrl:
-        "https://img.icons8.com/?size=100&id=MX92yo3ozHJD&format=png&color=000000",
-    },
-
-    {
-      id: 9,
-      name: "Git",
-      docs: "https://git-scm.com/",
-      iconUrl:
-        "https://img.icons8.com/?size=100&id=20906&format=png&color=000000",
-    },
-
-    {
-      id: 10,
-      name: "GitHub",
-      docs: "https://docs.github.com/en",
-      iconUrl:
-        "https://img.icons8.com/?size=100&id=63777&format=png&color=000000",
-    },
-    {
-      id: 11,
-      name: "MongoDB",
-      docs: "https://www.mongodb.com/",
-      iconUrl:
-        "https://img.icons8.com/?size=100&id=tBBf3P8HL0vR&format=png&color=000000",
-    },
-    {
-      id: 12,
-      name: "Prompt Engineering",
-      docs: "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html",
-      iconUrl:
-        "https://img.icons8.com/?size=100&id=43988&format=png&color=000000",
-    },
-    {
-      id: 13,
-      name: "Python",
-      docs: "https://www.python.org/",
-      iconUrl:
-        "https://img.icons8.com/?size=100&id=13441&format=png&color=000000",
+      title: "AI & Productivity",
+      icon: Sparkles,
+      items: [
+        {
+          name: "Prompt Engineering",
+          Icon: BrainCircuit,
+          color: "#A855F7",
+          docs: "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html",
+        },
+      ],
     },
   ];
 
   return (
     <section
       id="skills"
-      className={`min-h-screen py-20 transition-all duration-300 ${
+      className={`py-20 transition-all duration-300 ${
         darkMode ? "bg-gray-800 text-gray-100" : "bg-gray-50 text-gray-900"
       }`}
       aria-labelledby="skills-heading"
@@ -108,64 +152,74 @@ const Skills = ({ darkMode }) => {
         <header className="mb-16 text-center">
           <h2
             id="skills-heading"
-            className="text-5xl font-bold mb-4 bg-linear-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent"
+            className="text-4xl sm:text-5xl font-bold mb-5 bg-linear-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent"
           >
             EXPERTISE
           </h2>
           <p
-            className={`text-lg ${darkMode ? "text-gray-300" : "text-gray-600"}`}
+            className={`text-lg max-w-2xl mx-auto ${
+              darkMode ? "text-gray-300" : "text-gray-600"
+            }`}
           >
             I am proficient in performing tasks related to all of the listed
             skills below.
           </p>
         </header>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skills.map((s) => (
-            <article
-              key={s.id}
-              className={`group p-6 rounded-xl border transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
-                darkMode
-                  ? "border-gray-700 bg-linear-to-br from-gray-900 to-gray-800 hover:border-amber-500/50"
-                  : "border-gray-200 bg-linear-to-br from-white to-gray-50 hover:border-amber-500/50"
-              }`}
-              aria-label={`${s.name} skill card`}
-            >
-              <div className="flex items-center gap-4">
-                <a
-                  href={s.docs}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`shrink-0 inline-flex items-center justify-center w-14 h-14 rounded-lg transition-all duration-300 group-hover:scale-110 ${
-                    darkMode
-                      ? "bg-linear-to-br from-amber-600/20 to-amber-500/10 hover:from-amber-600/40 hover:to-amber-500/20"
-                      : "bg-linear-to-br from-amber-400/20 to-amber-300/10 hover:from-amber-400/40 hover:to-amber-300/20"
-                  }`}
-                  title={`Open ${s.name} docs`}
-                >
-                  <img
-                    src={s.iconUrl}
-                    alt={`${s.name} logo`}
-                    className="w-8 h-8 object-contain"
-                    loading="lazy"
-                  />
-                </a>
-
-                <div className="min-w-0">
-                  <a
-                    href={s.docs}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`font-semibold transition-colors group-hover:text-amber-500 ${
-                      darkMode ? "text-gray-100" : "text-gray-900"
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {categories.map((cat) => {
+            const CategoryIcon = cat.icon;
+            return (
+              <article
+                key={cat.title}
+                className={`group rounded-2xl border p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
+                  darkMode
+                    ? "border-gray-700 bg-linear-to-br from-gray-900 to-gray-800 hover:border-amber-500/50 hover:shadow-amber-500/5"
+                    : "border-gray-200 bg-white hover:border-amber-500/50 hover:shadow-amber-500/10"
+                }`}
+              >
+                <div className="flex items-center gap-3 mb-5">
+                  <span
+                    className={`inline-flex items-center justify-center w-11 h-11 rounded-xl shrink-0 ${
+                      darkMode
+                        ? "bg-linear-to-br from-amber-500/20 to-amber-600/10 text-amber-400"
+                        : "bg-linear-to-br from-amber-400/20 to-amber-500/10 text-amber-600"
                     }`}
                   >
-                    {s.name}
-                  </a>
+                    <CategoryIcon size={22} strokeWidth={2} />
+                  </span>
+                  <h3 className="text-lg font-bold">{cat.title}</h3>
                 </div>
-              </div>
-            </article>
-          ))}
+
+                <div className="flex flex-wrap gap-2.5">
+                  {cat.items.map((item) => {
+                    const ItemIcon = item.Icon;
+                    return (
+                      <a
+                        key={item.name}
+                        href={item.docs}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`Open ${item.name} docs`}
+                        className={`inline-flex items-center gap-2 px-3.5 py-2 rounded-full border text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 ${
+                          darkMode
+                            ? "border-gray-700 bg-gray-800/60 text-gray-200 hover:border-amber-500/60 hover:bg-gray-800"
+                            : "border-gray-200 bg-gray-50 text-gray-700 hover:border-amber-500/60 hover:bg-white hover:shadow-sm"
+                        }`}
+                      >
+                        <ItemIcon
+                          size={16}
+                          style={{ color: item.color }}
+                          className="shrink-0"
+                        />
+                        {item.name}
+                      </a>
+                    );
+                  })}
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>
