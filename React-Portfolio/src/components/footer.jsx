@@ -1,29 +1,26 @@
 const Footer = ({ darkMode }) => {
   return (
     <footer
-      className={`py-1 transition-all duration-300 border-t ${
+      className={`border-t py-6 transition-colors duration-500 ${
         darkMode
-          ? "bg-gray-900 text-white border-gray-800"
-          : "bg-white text-gray-900 border-gray-100"
+          ? "border-white/10 bg-[#060912] text-slate-400"
+          : "border-slate-200 bg-white text-slate-500"
       }`}
     >
-      <div className="mx-auto max-w-4xl px-6 py-3">
-        <div className="container mx-auto px-6 text-center flex flex-col items-center gap-6 justify-between  text-sm text-slate-400 md:flex-row">
-          <p className={`${darkMode ? "text-gray-400" : "text-gray-600"}`}>
-            © {new Date().getFullYear()} All Rights Reserved.
-          </p>
-          <p>
-            Designed & Developed by 👉🏻
-            <a
-              href="https://shubz-portfolio.vercel.app/"
-              className="bg-linear-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent font-bold"
-            >
-              ゛Shubham Batwal ˎˊ˗
-            </a>
-          </p>
-        </div>
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 text-center text-sm sm:px-6 md:flex-row md:text-left lg:px-8">
+        <p>© {new Date().getFullYear()} All Rights Reserved.</p>
+        <p>
+          Designed & Developed by 👉🏻{" "}
+          <a
+            href="https://shubz-portfolio.vercel.app/"
+            className="font-bold bg-linear-to-r from-indigo-500 via-violet-500 to-cyan-400 bg-clip-text text-transparent transition-opacity duration-300 hover:opacity-75"
+          >
+            ゛Shubham Batwal ˎˊ˗
+          </a>
+        </p>
       </div>
     </footer>
   );
 };
+
 export default Footer;
