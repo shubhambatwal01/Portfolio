@@ -15,10 +15,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <nav
-      className={`fixed inset-x-0 top-0 z-50 border-b backdrop-blur-2xl transition-all duration-500 ${
+      className={`fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl transition-all duration-500 ${
         darkMode
-          ? "border-white/10 bg-[#070b14]/75 text-white shadow-[0_12px_40px_rgba(2,6,23,0.28)]"
-          : "border-slate-200/70 bg-white/75 text-slate-950 shadow-[0_12px_40px_rgba(15,23,42,0.07)]"
+          ? "border-white/10 text-white shadow-[0_12px_40px_rgba(2,6,23,0.28)]"
+          : "border-slate-200/70 text-slate-950 shadow-[0_12px_40px_rgba(15,23,42,0.07)]"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-6 lg:px-8">
