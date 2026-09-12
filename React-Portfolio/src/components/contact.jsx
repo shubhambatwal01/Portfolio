@@ -106,33 +106,13 @@ const Contact = ({ darkMode }) => {
   return (
     <section
       id="contact"
-      className={`relative overflow-hidden py-24 transition-colors duration-500 sm:py-28 ${
+      className={`relative overflow-hidden py-24 transition-colors duration-500 ${
         darkMode ? "bg-[#070b14] text-white" : "bg-slate-50 text-slate-950"
       }`}
     >
-      <div className="pointer-events-none absolute inset-0">
-        <div
-          className={`absolute -left-32 top-12 h-80 w-80 rounded-full blur-[120px] ${
-            darkMode ? "bg-indigo-600/15" : "bg-indigo-300/30"
-          }`}
-        />
-
-        <div
-          className={`absolute -right-32 bottom-10 h-80 w-80 rounded-full blur-[120px] ${
-            darkMode ? "bg-cyan-500/10" : "bg-cyan-300/25"
-          }`}
-        />
-
-        <div
-          className={`absolute left-1/2 top-1/2 h-112.5 w-112.5 -translate-x-1/2 -translate-y-1/2 rounded-full blur-[160px] ${
-            darkMode ? "bg-violet-600/6" : "bg-violet-300/15"
-          }`}
-        />
-      </div>
-
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        <div className="mx-auto mb-16 max-w-3xl text-center">
-          <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+        <div className="mb-16 text-center">
+          <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
             CON
             <span className="bg-linear-to-r from-indigo-500 via-violet-500 to-cyan-400 bg-clip-text text-transparent">
               TACT
