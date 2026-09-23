@@ -11,6 +11,15 @@ const projects = [
     link: "https://shubz-smart-stay.vercel.app",
   },
   {
+    title: "Exam Seating Arrangement",
+    description:
+      "Exam Seating & Timetable Management System built with the MERN stack to automate exam scheduling and seating for fresh and backlog students, ensuring conflict-free arrangements.",
+    image:
+      "https://i.8upload.com/image/c27bbd8e81e7d51b/screenshot-2026-09-19-192248.png",
+    github: "https://github.com/shubhambatwal01/Exam-Seating-Arrangement",
+    link: "https://exam-seating-allotment.vercel.app",
+  },
+  {
     title: "Task Manager",
     description:
       "A full-stack MERN Task Management System featuring task CRUD operations, REST APIs, MongoDB database integration, and a responsive React-based user interface.",
