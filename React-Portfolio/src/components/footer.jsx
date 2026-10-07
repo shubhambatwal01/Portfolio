@@ -12,7 +12,7 @@ const Footer = ({ darkMode }) => {
         <p>
           Designed & Developed by 👉🏻{" "}
           <a
-            href="https://shubz-portfolio.vercel.app/"
+            href="https://shubhambatwal.vercel.app/"
             className="font-bold bg-linear-to-r from-indigo-500 via-violet-500 to-cyan-400 bg-clip-text text-transparent transition-opacity duration-300 hover:opacity-75"
           >
             ゛Shubham Batwal ˎˊ˗

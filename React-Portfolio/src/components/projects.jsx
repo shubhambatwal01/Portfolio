@@ -36,7 +36,7 @@ const projects = [
       "https://i.8upload.com/image/65548815a58b45e5/screenshot-2026-09-06-200707.png",
     github:
       "https://github.com/shubhambatwal01/Portfolio/tree/main/React-Portfolio",
-    link: "https://shubz-portfolio.vercel.app",
+    link: "https://shubhambatwal.vercel.app",
   },
   {
     title: "Amazaon Clone",
@@ -108,7 +108,9 @@ const Projects = ({ darkMode }) => {
               <div className="relative h-52 overflow-hidden">
                 <img
                   src={proj.image}
-                  alt={proj.title}
+                  alt={`${proj.title} web application by Shubham Batwal`}
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:transform-[scale(1.1)_translateZ(24px)]"
                 />
                 <div

@@ -9,11 +9,16 @@ import Footer from "./components/footer.jsx";
 import Certificates from "./components/certificates.jsx";
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
-  });
+  const [darkMode, setDarkMode] = useState(false);
+  const [themeReady, setThemeReady] = useState(false);
 
   useEffect(() => {
+    setDarkMode(localStorage.getItem("theme") === "dark");
+    setThemeReady(true);
+  }, []);
+
+  useEffect(() => {
+    if (!themeReady) return;
     if (darkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
@@ -21,7 +26,7 @@ const App = () => {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-  }, [darkMode]);
+  }, [darkMode, themeReady]);
 
   return (
     <div

@@ -132,9 +132,12 @@ const Home = ({ darkMode }) => {
               }`}
             >
               <img
-                src="/ShubzPhoto.png"
-                alt="Shubham Batwal"
-                loading="lazy"
+                src="/ShubzPhoto.webp"
+                alt="Shubham Batwal, Full-Stack Developer in Pune"
+                width="1254"
+                height="1254"
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
