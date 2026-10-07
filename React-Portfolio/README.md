@@ -154,7 +154,7 @@ npm run preview
 
 ### Home Page
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6bd333d2-3433-4bf7-be9c-5bc71e9434d4" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/497af72e-cb35-4acf-bcb0-3146a39483a2" />
 
 ### Projects Section
 
@@ -164,9 +164,6 @@ npm run preview
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/285e5150-98bf-4499-b860-eea1b3a7e474" />
 
-### Mobile View
-
-<img width="720" height="1522" alt="image" src="https://github.com/user-attachments/assets/349a38f6-c689-4196-87c0-eaeb35180a47" />
 
 ---
 
@@ -271,7 +268,7 @@ https://github.com/shubhambatwal01/Portfolio/tree/main/React-Portfolio
 ## 🌐 Live Portfolio
 
 🌐 **Portfolio:**
-https://shubz-portfolio.vercel.app/
+https://shubhambatwal.vercel.app/
 
 ---
 
@@ -287,7 +284,7 @@ Full Stack Developer | React.js | Node.js | MongoDB
 
 🔗 GitHub: https://github.com/shubhambatwal01/
 
-🌐 Portfolio: https://shubz-portfolio.vercel.app/
+🌐 Portfolio: https://shubhambatwal.vercel.app/
 
 ---
 
