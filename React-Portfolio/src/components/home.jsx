@@ -246,7 +246,7 @@ const Home = ({
           </div>
         </div>
 
-        <div className="order-1 flex w-full justify-center lg:order-2 lg:justify-end">
+        <div className="order-1 flex w-full -mt-10 justify-center lg:order-2 lg:mt-0 lg:justify-end">
           <figure
             className="home-tech-orbit relative m-0 aspect-square w-full max-w-140 isolate"
             style={{
