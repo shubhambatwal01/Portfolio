@@ -4,67 +4,38 @@ const projects = [
   {
     title: "SmartStay",
     description:
-      "SmartStay is a full-stack web application to browse rental homes, manage favorites, enable secure authentication, and take online payments using Razorpay.",
+      "MERN Stack Accommodation Booking Platform with React.js, Node.js, MongoDB and Razorpay.",
     image:
       "https://i.8upload.com/image/6d3af2cced2ef66d/screenshot-2026-09-06-200333.png",
     github: "https://github.com/shubhambatwal01/SmartStay",
     link: "https://shubz-smart-stay.vercel.app",
   },
   {
-    title: "Exam Seating Arrangement",
+    title: "Exam Seating Allotment",
     description:
-      "Exam Seating & Timetable Management System built with the MERN stack to automate exam scheduling and seating for fresh and backlog students, ensuring conflict-free arrangements.",
+      "Full Stack Examination Management System using React.js, Node.js and MongoDB.",
     image:
       "https://i.8upload.com/image/c27bbd8e81e7d51b/screenshot-2026-09-19-192248.png",
-    github: "https://github.com/shubhambatwal01/Exam-Seating-Arrangement",
     link: "https://exam-seating-allotment.vercel.app",
   },
   {
-    title: "Task Manager",
+    title: "Personal Portfolio",
     description:
-      "A full-stack MERN Task Management System featuring task CRUD operations, REST APIs, MongoDB database integration, and a responsive React-based user interface.",
+      "Shubham Batwal – Full Stack Developer Portfolio built with React.js and Tailwind CSS.",
     image:
-      "https://i.8upload.com/image/4cae10e7ec1dfa52/screenshot-2026-07-08-170143.png",
-    github: "https://github.com/shubhambatwal01/Task-Management-System",
-    link: "https://shubz-task-manager.vercel.app",
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "A modern portfolio website built with React and Vite, featuring a clean design and smooth animations.",
-    image:
-      "https://i.8upload.com/image/65548815a58b45e5/screenshot-2026-09-06-200707.png",
+      "https://i.8upload.com/image/7661694381c82c38/screenshot-2026-10-10-113942.png",
     github:
       "https://github.com/shubhambatwal01/Portfolio/tree/main/React-Portfolio",
     link: "https://shubhambatwal.vercel.app",
   },
   {
-    title: "Amazaon Clone",
+    title: "Task Manager",
     description:
-      "A visually appealing clone of the Amazon homepage, built using only HTML and CSS. This project is perfect for learning front-end web development and understanding how to structure and style complex layouts.",
-    image: "https://8upload.com/image/bbfea8c9a20f6319/Amzon-Clone.jpg",
-    github: "https://github.com/shubhambatwal01/Amazon-Clone-Application",
-  },
-  {
-    title: "Rock-Paper-Scissors Game",
-    description:
-      "A simple and interactive Rock Paper Scissors game built with HTML, CSS, and JavaScript. Challenge the computer and see if you can beat its random choices!",
-    image: "https://8upload.com/image/9d69c727809a8674/Rock-Paper-Scissors.jpg",
-    github: "https://github.com/shubhambatwal01/Rock-Paper-Scissors-Game",
-  },
-  {
-    title: "BMI-Calculator",
-    description:
-      "A simple and user-friendly Body Mass Index (BMI) Calculator built with React and Vite. This app allows users to quickly calculate their BMI based on height and weight inputs, providing instant feedback on their health status.",
-    image: "https://8upload.com/image/b8e5f39b35770258/BMI-Calculator.jpg",
-    github: "https://github.com/shubhambatwal01/BMI-Calculator",
-  },
-  {
-    title: "Calculator App",
-    description:
-      "A modern, responsive calculator web app built with ReactJS and styled using Tailwind CSS. This project replicates the look and feel of a mobile calculator, featuring a clean UI, smooth button interactions, and basic arithmetic operations.",
-    image: "https://8upload.com/image/1033ab83888ca174/Calclator.jpg",
-    github: "https://github.com/shubhambatwal01/Calculator",
+      "MERN Stack Task Management Application with JWT Authentication.",
+    image:
+      "https://i.8upload.com/image/4cae10e7ec1dfa52/screenshot-2026-07-08-170143.png",
+    github: "https://github.com/shubhambatwal01/Task-Management-System",
+    link: "https://shubz-task-manager.vercel.app",
   },
 ];
 
