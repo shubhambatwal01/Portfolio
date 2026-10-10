@@ -182,9 +182,9 @@ const Home = ({
               darkMode ? "text-slate-300" : "text-slate-600"
             }`}
           >
-            A Passionate Full-stack Web Developer 🚀 — I build interactive,
-            responsive web applications with clean design and strong
-            performance.
+            Full-Stack Developer | I turn ideas into real-world web
+            applications, combining thoughtful design, clean code, and reliable
+            functionality to create meaningful digital experiences.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
