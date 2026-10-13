@@ -48,8 +48,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
         <div className="hidden items-center gap-2 lg:flex">
           <a
-            href="https://drive.google.com/file/d/15SlXaWNtgu3DGPeuGhDbvdR3l6y8v6qR/view?usp=sharing"
-            download="https://drive.google.com/file/d/15SlXaWNtgu3DGPeuGhDbvdR3l6y8v6qR/view?usp=sharing"
+            href="https://drive.google.com/drive/folders/1N31QkOSH19a02z49K4QOtcQLet1Oh2no?usp=sharing"
+            download="https://drive.google.com/drive/folders/1N31QkOSH19a02z49K4QOtcQLet1Oh2no?usp=sharing"
             className="group inline-flex items-center gap-2 rounded-xl bg-linear-to-r from-indigo-600 via-violet-600 to-cyan-500 px-4 py-2.5 text-sm font-semibold text-white shadow-[0_10px_26px_rgba(79,70,229,0.28)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_34px_rgba(34,211,238,0.25)] active:translate-y-0"
           >
             <Download
@@ -131,8 +131,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             ))}
             <li className="pt-2">
               <a
-                href="https://drive.google.com/file/d/15SlXaWNtgu3DGPeuGhDbvdR3l6y8v6qR/view?usp=sharing"
-                download="https://drive.google.com/file/d/15SlXaWNtgu3DGPeuGhDbvdR3l6y8v6qR/view?usp=sharing"
+                href="https://drive.google.com/drive/folders/1N31QkOSH19a02z49K4QOtcQLet1Oh2no?usp=sharing"
+                download="https://drive.google.com/drive/folders/1N31QkOSH19a02z49K4QOtcQLet1Oh2no?usp=sharing"
                 className="flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-indigo-600 via-violet-600 to-cyan-500 px-4 py-3 text-sm font-semibold text-white shadow-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
