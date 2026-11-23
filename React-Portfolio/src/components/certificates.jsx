@@ -119,14 +119,6 @@ const Certificates = ({ darkMode }) => {
                     : "border-slate-200/80 bg-white shadow-[0_22px_55px_rgba(15,23,42,0.08)] hover:border-indigo-200 hover:shadow-[0_34px_75px_rgba(79,70,229,0.14)]"
                 }`}
               >
-                <div
-                  className={`absolute inset-0 bg-linear-to-br ${certificate.gradient} opacity-0 transition-opacity duration-700 group-hover:opacity-[0.07]`}
-                />
-
-                <div
-                  className={`absolute left-0 top-0 h-0.5 w-0 bg-linear-to-r ${certificate.gradient} transition-all duration-700 group-hover:w-full`}
-                />
-
                 <div className="relative flex h-full flex-1 flex-col p-6 transition-transform duration-700 group-hover:transform-[translateZ(26px)]">
                   <div className="mb-6 flex items-start justify-between gap-4">
                     <div
@@ -153,7 +145,6 @@ const Certificates = ({ darkMode }) => {
                           : "border-emerald-200 bg-emerald-50 text-emerald-700"
                       }`}
                     >
-                      <Sparkles size={13} />
                       Certified
                     </div>
                   </div>
