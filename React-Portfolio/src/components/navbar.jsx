@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Sun, Moon, Download, Menu, X } from "lucide-react";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const resumeUrl =
+    "https://drive.google.com/drive/folders/1N31QkOSH19a02z49K4QOtcQLet1Oh2no?usp=sharing";
+
   const navLinks = [
     { href: "#home", label: "Home" },
-    { href: "#overview", label: "Overview" },
+    { href: "#about", label: "About" },
     { href: "#skills", label: "Expertise" },
     { href: "#projects", label: "Projects" },
     { href: "#certifications", label: "Certifications" },
@@ -20,6 +23,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           ? "border-white/10 text-white shadow-[0_12px_40px_rgba(2,6,23,0.28)]"
           : "border-slate-200/70 text-slate-950 shadow-[0_12px_40px_rgba(15,23,42,0.07)]"
       }`}
+      aria-label="Main navigation"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-6 lg:px-8">
         <a href="#home" className="group flex items-center gap-3">
@@ -48,14 +52,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
         <div className="hidden items-center gap-2 lg:flex">
           <a
-            href="https://drive.google.com/drive/folders/1N31QkOSH19a02z49K4QOtcQLet1Oh2no?usp=sharing"
-            download="https://drive.google.com/drive/folders/1N31QkOSH19a02z49K4QOtcQLet1Oh2no?usp=sharing"
+            href={resumeUrl}
+            target="_blank"
+            rel="noreferrer"
             className="group inline-flex items-center gap-2 rounded-xl bg-linear-to-r from-indigo-600 via-violet-600 to-cyan-500 px-4 py-2.5 text-sm font-semibold text-white shadow-[0_10px_26px_rgba(79,70,229,0.28)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_34px_rgba(34,211,238,0.25)] active:translate-y-0"
           >
-            <Download
-              size={16}
-              className="transition-transform duration-300 group-hover:translate-y-0.5"
-            />
+            <Download size={16} />
             Resume
           </a>
 
@@ -99,6 +101,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 : "border-slate-200 bg-white text-slate-950"
             }`}
             aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-navigation"
           >
             {isMenuOpen ? <X size={21} /> : <Menu size={21} />}
           </button>
@@ -107,6 +111,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
       {isMenuOpen && (
         <div
+          id="mobile-navigation"
           className={`border-t lg:hidden ${
             darkMode
               ? "border-white/10 bg-[#0b1120]/95"
@@ -131,14 +136,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             ))}
             <li className="pt-2">
               <a
-                href="https://drive.google.com/drive/folders/1N31QkOSH19a02z49K4QOtcQLet1Oh2no?usp=sharing"
-                download="https://drive.google.com/drive/folders/1N31QkOSH19a02z49K4QOtcQLet1Oh2no?usp=sharing"
+                href={resumeUrl}
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-indigo-600 via-violet-600 to-cyan-500 px-4 py-3 text-sm font-semibold text-white shadow-lg"
                 onClick={() => setIsMenuOpen(false)}
-              >
-                <Download size={16} />
-                Resume
-              </a>
+              />
+              <Download size={16} />
+              Resume
             </li>
           </ul>
         </div>
