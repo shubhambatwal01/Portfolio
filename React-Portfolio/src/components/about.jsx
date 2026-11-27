@@ -1,4 +1,4 @@
-const Overview = ({ darkMode }) => {
+const About = ({ darkMode }) => {
   const experiences = [
     {
       title: "Here's a little Background",
@@ -9,15 +9,13 @@ const Overview = ({ darkMode }) => {
     {
       title: "Work Experience",
       icon: "💼",
-      duration: "Fresher",
       content:
         "I’m currently seeking a opportunities where I can contribute to real-world software projects, expand my technical expertise, and grow as a professional software developer.",
-        items: [
+      items: [
         {
           duration: "NOV 2024 - DEC 2024",
           degree: "Frontend Development Intern",
-          institution:
-            "Cognifyz technologies, Nagpur, (Remote)",
+          institution: "Cognifyz technologies, Nagpur, (Remote)",
         },
       ],
     },
@@ -42,7 +40,7 @@ const Overview = ({ darkMode }) => {
 
   return (
     <section
-      id="overview"
+      id="about"
       className={`relative overflow-hidden py-24 transition-colors duration-500 ${
         darkMode ? "bg-[#0a0f1c] text-white" : "bg-white text-slate-950"
       }`}
@@ -54,9 +52,10 @@ const Overview = ({ darkMode }) => {
       <div className="relative mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
-            OVER
+            About
             <span className="bg-linear-to-r from-indigo-500 via-violet-500 to-cyan-400 bg-clip-text text-transparent">
-              VIEW
+              {" "}
+              Me
             </span>
           </h2>
           <p
@@ -134,4 +133,4 @@ const Overview = ({ darkMode }) => {
   );
 };
 
-export default Overview;
+export default About;
