@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/navbar.jsx";
 import Home from "./components/home.jsx";
-import Overview from "./components/overview.jsx";
+import About from "./components/about.jsx";
 import Skills from "./components/skills.jsx";
 import Projects from "./components/projects.jsx";
 import Contact from "./components/contact.jsx";
@@ -36,7 +36,7 @@ const App = () => {
     >
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Home darkMode={darkMode} />
-      <Overview darkMode={darkMode} />
+      <About darkMode={darkMode} />
       <Skills darkMode={darkMode} />
       <Projects darkMode={darkMode} />
       <Certificates darkMode={darkMode} />
