@@ -4,6 +4,14 @@ import { SiUdemy, SiReact, SiHackerrank, SiNodedotjs } from "react-icons/si";
 
 const certifications = [
   {
+    title: "SQL (Basic)",
+    issuer: "Hacker Rank",
+    date: "September 2026",
+    icon: SiHackerrank,
+    gradient: "from-cyan-400 via-blue-500 to-indigo-500",
+    link: "https://www.hackerrank.com/certificates/7689e529b54f",
+  },
+  {
     title: "Frontend Developer (React)",
     issuer: "Hacker Rank",
     date: "August 2026",
